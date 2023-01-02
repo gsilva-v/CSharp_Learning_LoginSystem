@@ -85,6 +85,7 @@ namespace LoginSytem
             this.cancelButton.TabIndex = 5;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // errorLabel
             // 
@@ -101,9 +102,9 @@ namespace LoginSytem
             this.passInput.Font = new System.Drawing.Font("Unispace", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passInput.Location = new System.Drawing.Point(267, 264);
             this.passInput.Name = "passInput";
+            this.passInput.PasswordChar = '*';
             this.passInput.Size = new System.Drawing.Size(245, 40);
             this.passInput.TabIndex = 3;
-            this.passInput.TextChanged += new System.EventHandler(this.passInput_TextChanged);
             // 
             // LoginWindow
             // 
@@ -119,7 +120,7 @@ namespace LoginSytem
             this.Controls.Add(this.loginLabel);
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
-            this.Name = "Form1";
+            this.Name = "LoginWindow";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

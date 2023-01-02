@@ -59,9 +59,12 @@ namespace LoginSytem
 
         }
 
-        private void passInput_TextChanged(object sender, EventArgs e)
+    
+        private void cancelButton_Click(object sender, EventArgs e)
         {
-
+            loginInput.Text = "";
+            passInput.Text = "";
+            this.Close();
         }
     }
 }
